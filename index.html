@@ -91,118 +91,152 @@
 </style>
 <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-<div class="container-fluid p-0 mb-5">
-    <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+<!-- Hero Slider Start -->
+<div id="hero-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#blog-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#blog-carousel" data-slide-to="1"></li>
-            <li data-target="#blog-carousel" data-slide-to="2"></li>
-            <li data-target="#blog-carousel" data-slide-to="3"></li>
-        </ol>
+    <div class="carousel-inner">
 
-        <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active hero-slide" style="background-image: url('img/carousel-1.jpg');">
+            <div class="hero-overlay"></div>
 
-            <!-- Slide 1: Lapsi Truffle -->
-            <div class="carousel-item active">
-                <img class="w-100" src="img/carousel-1.jpg" alt="Lapsi Truffle">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-primary font-weight-medium m-0">Premium Nepali Product</h2>
-                    <h1 class="display-1 text-white m-0">LAPSI TRUFFLE</h1>
-                    <h2 class="text-white m-0">* Taste Nepal's Pride *</h2>
+            <div class="hero-content text-center">
+                <h4 class="text-primary text-uppercase mb-3">Made in Nepal</h4>
+                <h1 class="hero-title">Lapsi Truffle</h1>
+                <p class="hero-sub">A fusion of chocolate & authentic Nepali flavor</p>
+
+                <div class="hero-buttons mt-4">
+                    <a href="menu.html" class="btn btn-primary px-4 m-2">Explore</a>
+                    <a href="https://wa.me/9779863194345" class="btn btn-outline-light px-4 m-2">Order Now</a>
                 </div>
             </div>
-
-            <!-- Slide 2: Lapsi Candy -->
-            <div class="carousel-item">
-                <img class="w-100" src="img/carousel-2.jpg" alt="Lapsi Candy">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-primary font-weight-medium m-0">Authentic & Tangy</h2>
-                    <h1 class="display-1 text-white m-0">LAPSI CANDY</h1>
-                    <h2 class="text-white m-0">* Sweet • Spicy • Traditional *</h2>
-                </div>
-            </div>
-
-            <!-- Slide 3: Lapsi Powder -->
-            <div class="carousel-item">
-                <img class="w-100" src="img/carousel-3.jpg" alt="Lapsi Powder">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-primary font-weight-medium m-0">Pure & Natural</h2>
-                    <h1 class="display-1 text-white m-0">LAPSI POWDER</h1>
-                    <h2 class="text-white m-0">* Flavor Your Recipes *</h2>
-                </div>
-            </div>
-
-            <!-- Slide 4: Lapsi Choco Bytes -->
-            <div class="carousel-item">
-                <img class="w-100" src="img/carousel-4.jpg" alt="Lapsi Choco Bytes">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-primary font-weight-medium m-0">Rich • Bold • Indulgent</h2>
-                    <h1 class="display-1 text-white m-0">LAPSI CHOCO BYTES</h1>
-                    <h2 class="text-white m-0">* Dark Chocolate meets Lapsi Magic *</h2>
-                </div>
-            </div>
-
         </div>
 
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
+        <!-- Slide 2 -->
+        <div class="carousel-item hero-slide" style="background-image: url('img/carousel-2.jpg');">
+            <div class="hero-overlay"></div>
 
-        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+            <div class="hero-content text-center">
+                <h4 class="text-primary text-uppercase mb-3">Authentic Taste</h4>
+                <h1 class="hero-title">Lapsi Candy</h1>
+                <p class="hero-sub">Sweet • Spicy • Traditional</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item hero-slide" style="background-image: url('img/carousel-3.jpg');">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content text-center">
+                <h4 class="text-primary text-uppercase mb-3">Pure & Natural</h4>
+                <h1 class="hero-title">Lapsi Powder</h1>
+                <p class="hero-sub">Enhance your recipes with authentic flavor</p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item hero-slide" style="background-image: url('img/carousel-4.jpg');">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content text-center">
+                <h4 class="text-primary text-uppercase mb-3">New Arrival</h4>
+                <h1 class="hero-title">Choco Bytes</h1>
+                <p class="hero-sub">Dark chocolate meets Lapsi magic</p>
+            </div>
+        </div>
 
     </div>
-</div>
 
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#hero-carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+
+</div>
 <style>
+    /* Slide */
+.hero-slide {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+/* Content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    max-width: 700px;
+    padding: 20px;
+}
+.hero-content h4 {
+    color: rgba(255,255,255,0.7);
+}
+
+/* Title */
+.hero-title {
+    color: #fff;
+    text-shadow:
+        0 4px 20px rgba(0,0,0,0.6),
+        0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Subtitle */
+.hero-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Buttons */
+.hero-buttons .btn {
+    border-radius: 30px;
+}
+
+/* Smooth fade */
+.carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Zoom effect (premium touch) */
+.carousel-item.active {
+    animation: zoomBg 8s ease-in-out;
+}
+
+@keyframes zoomBg {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
 
-    /* Fix image height */
-    .carousel-item img {
-        height: 65vh;
-        object-fit: cover;
+    .hero-slide {
+        height: 75vh;
     }
 
-    /* Adjust caption positioning */
-    .carousel-caption {
-        padding: 10px;
-        bottom: 20px;
+    .hero-title {
+        font-size: 28px;
     }
 
-    /* Main heading (BIG FIX) */
-    .carousel-caption h1 {
-        font-size: 28px !important;
-        line-height: 1.2;
+    .hero-sub {
+        font-size: 14px;
     }
 
-    /* Sub headings */
-    .carousel-caption h2 {
-        font-size: 14px !important;
-        margin: 5px 0;
-    }
-
-    /* Reduce spacing */
-    .carousel-caption h1,
-    .carousel-caption h2 {
-        margin: 3px 0 !important;
-    }
-
-    /* Indicators (dots) */
-    .carousel-indicators {
-        bottom: 5px;
-    }
-
-    .carousel-indicators li {
-        width: 8px;
-        height: 8px;
-    }
-
-    /* Controls (arrows smaller) */
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         width: 20px;
@@ -210,205 +244,200 @@
     }
 }
 </style>
-
-
-    <!-- Carousel End -->
-
+<!-- Hero Slider End -->
 
     <!-- About Start -->
-<div class="container-fluid py-5">
+<div class="container-fluid py-5 about-section">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title text-center mb-5">
             <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Welcome to LekBesy</h4>
             <h1 class="display-4">Empowering Communities Through Premium Lapsi</h1>
         </div>
 
-        <div class="row">
+        <div class="row align-items-center">
 
             <!-- LEFT -->
-            <div class="col-12 col-md-6 col-lg-4 py-3">
-                <h1 class="mb-3">Our Mission</h1>
-                <h5 class="mb-3">Transform locally available Lapsi into premium, globally loved products</h5>
-                <p>
-                    LekBesy is a social-impact enterprise dedicated to transforming Nepali Hog Plum (Lapsi)
-                    into innovative products while empowering women and rural communities.
-                    We blend tradition with modern innovation to bring authentic Nepali flavors to the world.
-                </p>
-                <a href="about.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">
-                    Learn Our Story
-                </a>
+            <div class="col-lg-4 mb-4">
+                <div class="about-card">
+                    <h3>Our Mission</h3>
+                    <h6 class="text-muted mb-3">
+                        Transform locally available Lapsi into globally loved products
+                    </h6>
+                    <p>
+                        LekBesy is a social-impact enterprise transforming Nepali Lapsi into innovative products while empowering women and communities.
+                    </p>
+                    <a href="about.html" class="btn btn-secondary mt-2">Learn More</a>
+                </div>
             </div>
 
             <!-- CENTER IMAGE -->
-            <div class="col-12 col-md-6 col-lg-4 py-3 about-img">
-                <div class="about-img-inner">
-                    <img 
-                        src="img/about.png" 
-                        class="about-img-tag"
-                        alt="LekBesy About Image"
-                    >
+            <div class="col-lg-4 mb-4 text-center">
+                <div class="about-image-wrapper">
+                    <img src="img/about.png" alt="LekBesy">
                 </div>
             </div>
 
             <!-- RIGHT -->
-            <div class="col-12 col-md-6 col-lg-4 py-3">
-                <h1 class="mb-3">Why Choose LekBesy</h1>
-                <p>
-                    Every LekBesy product is crafted with care, quality, and purpose.
-                    We preserve authentic Nepali traditions while supporting communities.
-                </p>
+            <div class="col-lg-4 mb-4">
+                <div class="about-card">
+                    <h3>Why Choose Us</h3>
+                    <p>
+                        Crafted with care, preserving Nepali tradition while supporting communities.
+                    </p>
 
-                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>DFTQC Certified Quality</h5>
-                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Women-Empowered Production</h5>
-                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>100% Natural Ingredients</h5>
+                    <ul class="about-list">
+                        <li>DFTQC Certified Quality</li>
+                        <li>Women Empowered Production</li>
+                        <li>100% Natural Ingredients</li>
+                    </ul>
 
-                <a href="menu.html" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">
-                    Explore Products
-                </a>
+                    <a href="menu.html" class="btn btn-primary mt-2">Explore Products</a>
+                </div>
             </div>
 
         </div>
+
     </div>
 </div>
+<style>     
+    /* Section background */
+.about-section {
+    background: linear-gradient(135deg, #fff, #f8f5f0);
+}
 
-<style>
+/* Card style */
+.about-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-/* Floating animation (same as yours, but cleaner) */
-.about-img-inner {
-    animation: floatY 4s ease-in-out infinite;
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Image wrapper */
+.about-image-wrapper {
+    position: relative;
+    border-radius: 20px;
     overflow: hidden;
+    animation: floatY 4s ease-in-out infinite;
 }
 
-.about-img-tag {
+/* Image */
+.about-image-wrapper img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: 0.5s;
 }
 
-.about-img-tag:hover {
+.about-image-wrapper:hover img {
     transform: scale(1.05);
+}
+
+/* List */
+.about-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.about-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #d4a762;
 }
 
 /* Animation */
 @keyframes floatY {
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(-8px); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
 
-/* ================= MOBILE ONLY ================= */
+/* MOBILE */
 @media (max-width: 768px) {
 
-    /* Stack spacing */
-    .row > div {
-        margin-bottom: 20px;
-    }
-
-    /* FIX IMAGE BREAKING ISSUE */
-    .about-img-inner {
-        height: auto !important;
-        position: relative !important;
-    }
-
-    .about-img-tag {
-        height: auto !important;
-        position: relative !important;
-        border-radius: 12px;
-    }
-
-    /* Center titles */
-    .section-title {
+    .about-card {
         text-align: center;
     }
 
-    /* Typography scaling */
-    h1.display-4 {
-        font-size: 26px !important;
+    .about-list li {
+        padding-left: 0;
     }
 
-    h1 {
-        font-size: 22px;
-    }
-
-    h5 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    /* Better padding */
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
+    .about-list li::before {
+        position: static;
+        margin-right: 5px;
     }
 }
 </style>
 <!-- About End -->
 
-
    <!-- Service Start -->
 <div class="container-fluid pt-5">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title text-center mb-5">
             <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Commitment</h4>
             <h1 class="display-4">Quality, Authenticity & Impact</h1>
         </div>
 
         <div class="row">
 
-            <!-- Item 1 -->
-            <div class="col-12 col-lg-6 mb-5 service-item">
-                <div class="row align-items-center service-inner">
-                    <div class="col-12 col-sm-5 text-center">
-                        <img class="img-fluid mb-3 mb-sm-0 service-img" src="img/service-1.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-7">
-                        <h4><i class="fa fa-leaf service-icon"></i>100% Natural Lapsi</h4>
-                        <p class="m-0">Made from authentic Nepali Hog Plum (Lapsi), our products contain only natural ingredients without artificial additives</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="col-12 col-lg-6 mb-5 service-item">
-                <div class="row align-items-center service-inner">
-                    <div class="col-12 col-sm-5 text-center">
-                        <img class="img-fluid mb-3 mb-sm-0 service-img" src="img/service-2.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-7">
-                        <h4><i class="fa fa-star service-icon"></i>DFTQC Certified</h4>
-                        <p class="m-0">Every product is certified by Nepal's Drug and Food Test Quality Control to ensure safety and quality standards</p>
+            <!-- ITEM -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="img/service-1.jpg" alt="">
+                    <div class="service-content">
+                        <i class="fa fa-leaf"></i>
+                        <h5>100% Natural</h5>
+                        <p>Made from real Nepali Lapsi with no artificial additives.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="col-12 col-lg-6 mb-5 service-item">
-                <div class="row align-items-center service-inner">
-                    <div class="col-12 col-sm-5 text-center">
-                        <img class="img-fluid mb-3 mb-sm-0 service-img" src="img/service-3.jpg" alt="">
-                    </div>
-                    <div class="col-12 col-sm-7">
-                        <h4><i class="fa fa-heart service-icon"></i>Women Empowerment</h4>
-                        <p class="m-0">Supporting women in rural communities through employment, fair wages, and skill development in lapsi production</p>
+            <!-- ITEM -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="img/service-2.jpg" alt="">
+                    <div class="service-content">
+                        <i class="fa fa-star"></i>
+                        <h5>DFTQC Certified</h5>
+                        <p>Ensuring quality, safety, and hygiene standards.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Item 4 -->
-            <div class="col-12 col-lg-6 mb-5 service-item">
-                <div class="row align-items-center service-inner">
-                    <div class="col-12 col-sm-5 text-center">
-                        <img class="img-fluid mb-3 mb-sm-0 service-img" src="img/service-4.jpg" alt="">
+            <!-- ITEM -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="img/service-3.jpg" alt="">
+                    <div class="service-content">
+                        <i class="fa fa-heart"></i>
+                        <h5>Women Empowerment</h5>
+                        <p>Creating opportunities for rural communities.</p>
                     </div>
-                    <div class="col-12 col-sm-7">
-                        <h4><i class="fa fa-globe service-icon"></i>Global Reach</h4>
-                        <p class="m-0">Bringing authentic Nepali flavors and values to customers worldwide while building a sustainable future for communities</p>
+                </div>
+            </div>
+
+            <!-- ITEM -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="img/service-4.jpg" alt="">
+                    <div class="service-content">
+                        <i class="fa fa-globe"></i>
+                        <h5>Global Reach</h5>
+                        <p>Bringing Nepali flavors to the world.</p>
                     </div>
                 </div>
             </div>
@@ -416,48 +445,58 @@
         </div>
     </div>
 </div>
-
-<style>
-
-/* Optional: slightly better image feel */
-.service-img {
-    border-radius: 10px;
+<style> /* Card */
+.service-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
-/* ================= MOBILE FIX ================= */
+/* Hover */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Content */
+.service-content {
+    padding: 20px;
+}
+
+.service-content i {
+    font-size: 26px;
+    color: #d4a762;
+    margin-bottom: 10px;
+}
+
+.service-content h5 {
+    margin-bottom: 10px;
+}
+.service-card:hover img {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-
-    /* Stack nicely */
-    .service-inner {
-        text-align: center;
+    .service-card img {
+        height: 150px;
     }
 
-    /* Space between image and text */
-    .service-img {
-        margin-bottom: 15px;
-    }
-
-    /* Better spacing between items */
-    .service-item {
-        margin-bottom: 30px;
-    }
-
-    /* Typography scaling */
-    .service-inner h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .service-inner p {
+    .service-content p {
         font-size: 14px;
     }
-
-    /* Center icons properly */
-    .service-icon {
-        margin-right: 8px;
-    }
-}
-</style>
+}</style>
 <!-- Service End -->
 
 <!-- Offer Start -->
@@ -527,136 +566,129 @@
 <div class="container-fluid pt-5">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title text-center mb-5">
             <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Products</h4>
             <h1 class="display-4">Explore Our Range</h1>
         </div>
 
         <div class="row">
 
-            <!-- LEFT COLUMN -->
+            <!-- LEFT -->
             <div class="col-12 col-lg-6">
-                <h1 class="mb-5">Signature Products</h1>
+                <h3 class="mb-4">Signature Products</h3>
 
-                <!-- Lapsi Truffle -->
-<div class="row align-items-center mb-5">
-    <div class="col-4 col-sm-3">
-        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/truffle.jpg" alt="">
-        <h5 class="menu-price">9 / 15 pcs</h5>
-    </div>
-    <div class="col-8 col-sm-9">
-        <h4>Lapsi Truffle</h4>
-        <p class="m-0">
-            A premium fusion of tangy Lapsi and rich chocolate.
-        </p>
-        <small class="text-muted d-block mt-1">
-            Available in: 9 pcs • 15 pcs
-        </small>
-    </div>
-</div>
+                <!-- Product Card -->
+                <div class="product-row mb-4">
+                    <img src="img/about.png" alt="">
+                    <div class="content">
+                        <h4>Lapsi Truffle <span class="badge">Best Seller</span></h4>
+                        <p>A premium fusion of tangy Lapsi and rich chocolate.</p>
+                        <small>9 pcs • 15 pcs</small>
+                    </div>
+                </div>
 
-                <!-- Lapsi Choco Bytes -->
-                <div class="row align-items-center mb-5">
-    <div class="col-4 col-sm-3">
-        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/choco-bytes.jpg" alt="">
-        <h5 class="menu-price">New</h5>
-    </div>
-    <div class="col-8 col-sm-9">
-        <h4>Lapsi Choco Bytes</h4>
-        <p class="m-0">
-            Rich dark chocolate paired with irresistible sweet-sour Lapsi.
-        </p>
-    </div>
-</div>
+                <div class="product-row mb-4">
+                    <img src="img/choco-bytes.png" alt="">
+                    <div class="content">
+                        <h4>Lapsi Choco Bytes <span class="badge new">New</span></h4>
+                        <p>Dark chocolate meets sweet-sour Lapsi magic.</p>
+                    </div>
+                </div>
 
             </div>
 
-            <!-- RIGHT COLUMN -->
+            <!-- RIGHT -->
             <div class="col-12 col-lg-6">
-                <h1 class="mb-5">Traditional & Essentials</h1>
+                <h3 class="mb-4">Traditional & Essentials</h3>
 
-                <!-- Lapsi Candy -->
-                <div class="row align-items-center mb-5">
-    <div class="col-4 col-sm-3">
-        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/lapsi-candy.jpg" alt="">
-        <h5 class="menu-price">200g / 400g</h5>
-    </div>
-    <div class="col-8 col-sm-9">
-        <h4>Lapsi Candy</h4>
-        <p class="m-0">
-            Traditional Nepali candy with a perfect balance of sweet and tangy flavors.
-        </p>
-        <small class="text-muted d-block mt-1">
-            Variants: Plain • Spicy
-        </small>
-        <small class="text-muted d-block">
-            Sizes: 200g • 400g • Bulk Orders Available
-        </small>
-    </div>
-</div>
+                <div class="product-row mb-4">
+                    <img src="img/lapsi-candy.png" alt="">
+                    <div class="content">
+                        <h4>Lapsi Candy</h4>
+                        <p>Classic sweet-tangy Nepali candy.</p>
+                        <small>Plain • Spicy | 200g • 400g • Bulk</small>
+                    </div>
+                </div>
 
-                <!-- Lapsi Powder -->
-                <div class="row align-items-center mb-5">
-    <div class="col-4 col-sm-3">
-        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/lapsi-powder.jpg" alt="">
-        <h5 class="menu-price">Multi-use</h5>
-    </div>
-    <div class="col-8 col-sm-9">
-        <h4>Lapsi Powder</h4>
-        <p class="m-0">
-            A versatile ingredient for cooking, seasoning, and traditional recipes.
-        </p>
-    </div>
-</div>
+                <div class="product-row mb-4">
+                    <img src="img/lapsi-powder.png" alt="">
+                    <div class="content">
+                        <h4>Lapsi Powder</h4>
+                        <p>Multi-use ingredient for cooking & flavoring.</p>
+                    </div>
+                </div>
 
             </div>
 
         </div>
     </div>
 </div>
+<style> 
+    /* Product row card */
+.product-row {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
 
-<style>
+/* Hover */
+.product-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
 
+/* Image */
+.product-row img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Content */
+.product-row .content h4 {
+    margin-bottom: 5px;
+}
+
+.product-row .content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Badge */
+.badge {
+    background: #28a745;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.badge.new {
+    background: #ff5722;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-    small.text-muted {
-        font-size: 12px;
-    }
 
-    /* Stack better */
-    .row.align-items-center {
+    .product-row {
+        flex-direction: column;
         text-align: center;
     }
 
-    /* Image spacing */
-    .menu-price {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    /* Improve spacing */
-    .mb-5 {
-        margin-bottom: 30px !important;
-    }
-
-    /* Typography */
-    h1.display-4 {
-        font-size: 26px !important;
-    }
-
-    h1 {
-        font-size: 22px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 14px;
+    .product-row img {
+        margin-bottom: 10px;
     }
 }
 </style>
 <!-- Menu End -->
+
 
    <!-- Order Section Start -->
 <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
@@ -890,7 +922,7 @@
 </style>
 <!-- Impact Stories End -->
 
-    <!-- Footer Start -->
+     <!-- Footer Start -->
 <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
     
     <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4 text-center text-md-left">
@@ -909,9 +941,9 @@
             <p>Support local • support women • support Nepali heritage</p>
 
             <div class="d-flex justify-content-center justify-content-md-start">
-                <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-square mr-2" href="https://www.instagram.com/lekbesy/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/profile.php?id=61558491642049"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/@LekBesy"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
 
@@ -942,8 +974,7 @@
         </div>
 
     </div>
-
-    <!-- Bottom -->
+     <!-- Bottom -->
 <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5 footer-bottom">
 
     <p class="mb-2 text-white footer-copy">
@@ -975,7 +1006,9 @@
 }
 </style>
 </div>
-<style>
+
+
+    <style>
 
 /* Default (desktop stays same) */
 .btn-square {
@@ -1051,13 +1084,42 @@
 <!-- Footer End -->
 
 
-    <!-- Back to Top -->
+
+
+   <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
     <i class="fa fa-angle-double-up"></i>
 </a>
 <style>
-    
+    .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect (desktop) */
+.back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 14px;
+    }
+}
+
 </style>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
