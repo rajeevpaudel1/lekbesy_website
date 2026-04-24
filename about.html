@@ -3,13 +3,25 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About LekBesy - Supporting Women & Communities with Premium Lapsi Products</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
+
+    <!-- Title (IMPORTANT for SEO) -->
+    <title>About </title>
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <meta name="keywords" content="Lapsi products Nepal, Lapsi truffle, Nepali candy, Lapsi candy, women empowerment Nepal, Nepali food brand">
+    <meta name="description" content="Learn about LekBesy, a Nepali social-impact brand transforming Lapsi into premium products while empowering women and rural communities.">
+
+    <!-- Open Graph (for sharing on Facebook, WhatsApp) -->
+    <meta property="og:title" content="About LekBesy">
+    <meta property="og:description" content="Premium Lapsi products from Nepal supporting women and communities.">
+    <meta property="og:image" content="img/about.png">
+    <meta property="og:type" content="website">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/head_logo.png" rel="icon">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,75 +40,248 @@
 
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">LekBesy</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About Us</a>
-                    <a href="menu.html" class="nav-item nav-link">Products</a>
-                    <a href="testimonial.html" class="nav-item nav-link">Impact</a>
-                    <a href="service.html" class="nav-item nav-link">Where to Buy</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact / Order</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+<div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
 
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand px-lg-4 m-0">
+            <img src="img/logo.png" alt="LekBesy Logo" class="logo-img">
+        </a>
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">About Us</h1>
-            <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
-                <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">About Us</p>
+        <!-- Toggle -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto p-4 nav-mobile">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link active">About Us</a>
+                <a href="menu.html" class="nav-item nav-link">Products</a>
+                <a href="testimonial.html" class="nav-item nav-link">Impact</a>
+                <a href="service.html" class="nav-item nav-link">Where to Buy</a>
+                <a href="contact.html" class="nav-item nav-link">Contact / Order</a>
             </div>
         </div>
+
+    </nav>
+</div>
+<style>
+   /* Logo control */
+.logo-img {
+    height: 90px;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+    /* Smaller logo */
+    .logo-img {
+        height: 60px;
+    }
+
+    /* Clean mobile menu */
+    .nav-mobile {
+        padding: 15px !important;
+        text-align: center;
+    }
+
+    /* Better tap targets */
+    .nav-mobile .nav-link {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Center items */
+    .navbar-nav {
+        align-items: center;
+    }
+}
+</style>
+<!-- Navbar End -->
+
+    <!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+
+    <div class="d-flex flex-column align-items-center justify-content-center text-center px-3"
+         style="min-height: 300px">
+
+        <h3 class="display-4 text-white text-uppercase">
+            About
+        </h3>
+
+        <div class="d-inline-flex mt-2">
+            <p class="m-0 text-white">
+                <a class="text-white" href="index.html">Home</a>
+            </p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">About</p>
+        </div>
+
     </div>
-    <!-- Page Header End -->
+</div>
+<style>
+    @media (max-width: 768px) {
+
+    .page-header {
+        margin-bottom: 30px !important;
+    }
+
+    .page-header h1 {
+        font-size: 26px !important;
+    }
+
+    .page-header div[style*="min-height"] {
+        min-height: 200px !important;
+    }
+
+    .page-header .d-inline-flex {
+        font-size: 14px;
+    }
+}
+</style>
+    
+<!-- Page Header End -->
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Welcome to LekBesy</h4>
-                <h1 class="display-4">Our Journey & Mission</h1>
+<div class="container-fluid py-5">
+    <div class="container">
+
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Who We Are</h4>
+            <h1 class="display-4">The Story Behind LekBesy</h1>
+        </div>
+
+        <div class="row">
+
+            <!-- LEFT -->
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Our Beginning</h1>
+                <h5 class="mb-3">A vision rooted in Nepal</h5>
+                <p>
+                    LekBesy was founded with a simple yet powerful idea—to unlock the true potential of Lapsi,
+                    a fruit deeply connected to Nepali culture but often underutilized.
+                </p>
+                <p>
+                    What started as an experiment has now become a growing social enterprise,
+                    working closely with rural communities and women to create products that carry both
+                    taste and purpose.
+                </p>
+                <a href="testimonial.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">
+                    Our Impact
+                </a>
             </div>
-            <div class="row">
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Our Story</h1>
-                    <h5 class="mb-3">From a Local Resource to Global Pride</h5>
-                    <p>LekBesy began with a vision to transform the Nepali Hug Plum (Lapsi) - a locally available fruit with immense potential - into premium products. What started as a passion project has evolved into a social-impact enterprise dedicated to empowering women and rural communities while bringing authentic Nepali flavors to the world.</p>
-                    <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Our Impact</a>
-                </div>
-                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Our Values</h1>
-                    <p>At LekBesy, we believe in blending business with purpose. Every decision we make considers three pillars: quality products, community empowerment, and preserving Nepali heritage.</p>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Authenticity - Real Lapsi, Real Value</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Women-First Approach</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Quality & Hygiene Certified</h5>
-                    <a href="testimonial.html" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">See Our Impact</a>
+
+            <!-- CENTER IMAGE (fix mobile later if needed) -->
+            <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;">
                 </div>
             </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Our Philosophy</h1>
+                <p>
+                    At LekBesy, we believe business should go beyond profit.
+                    Every product we create reflects our commitment to quality,
+                    people, and purpose.
+                </p>
+
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Empowering women through employment</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Preserving authentic Nepali flavors</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Delivering export-quality products</h5>
+
+                <a href="menu.html" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">
+                    Explore Products
+                </a>
+            </div>
+
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
+ <!-- Founder Section Start -->
+<div class="container-fluid py-5">
+    <div class="container">
 
+        <div class="row align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-12 col-md-6 col-lg-5 mb-4 mb-md-0">
+                <img src="img/founder.jpg" alt="Dikshya Paudel" class="img-fluid rounded shadow founder-img">
+            </div>
+
+            <!-- CONTENT -->
+            <div class="col-12 col-md-6 col-lg-7">
+
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">
+                    Founder & Vision
+                </h4>
+
+                <h1 class="display-4 mb-3">
+                    Dikshya Paudel
+                </h1>
+
+                <h5 class="mb-3">
+                    CEO & Co-Founder of LekBesy
+                </h5>
+
+                <p>
+                    LekBesy was built on a belief that local resources, when valued and nurtured,
+                    can create global impact. Dikshya Paudel founded LekBesy with a vision to
+                    transform Lapsi into premium products while uplifting communities.
+                </p>
+
+                <p>
+                    Her focus is not just on building a successful brand, but on creating
+                    opportunities for women, promoting Nepali identity, and bringing authentic
+                    flavors of Nepal to the global stage.
+                </p>
+
+                <p class="font-italic">
+                    “We are not just building products—we are building opportunities and pride in Nepali heritage.”
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<style>
+
+/* Image styling */
+.founder-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+    .founder-img {
+        max-height: 250px;
+    }
+
+    .founder-section h1,
+    .display-4 {
+        font-size: 26px !important;
+    }
+
+    .founder-section h5 {
+        font-size: 16px;
+    }
+
+    .founder-section p {
+        font-size: 14px;
+    }
+
+}
+</style>
+<!-- Founder Section End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
