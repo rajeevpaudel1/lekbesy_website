@@ -1,589 +1,613 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Testimonial</title>
-    <link rel="icon" href="/img/head_logo.png">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="LekBesy Impact, Community Stories, Women Empowerment" name="keywords">
-    <meta content="Learn about the positive impact LekBesy creates in communities" name="description">
+    <link rel="icon" href="/img/head_logo.png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="LekBesy Impact, Community Stories, Women Empowerment"
+      name="keywords"
+    />
+    <meta
+      content="Learn about the positive impact LekBesy creates in communities"
+      name="description"
+    />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
-</head>
+    <link href="css/style.min.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar Start -->
-<div class="container-fluid p-0 nav-bar">
-    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-
+    <div class="container-fluid p-0 nav-bar">
+      <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
         <!-- Logo -->
         <a href="index.html" class="navbar-brand px-lg-4 m-0">
-            <img src="img/logo.png" alt="Lekbesy Logo" class="logo-img">
+          <img src="img/logo.png" alt="Lekbesy Logo" class="logo-img" />
         </a>
 
         <!-- Toggle -->
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Menu -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto p-4 nav-mobile">
-                <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="menu.html" class="nav-item nav-link">Products</a>
-                <a href="testimonial.html" class="nav-item nav-link active">Impact</a>
-                <a href="service.html" class="nav-item nav-link">Where to Buy</a>
-                <a href="contact.html" class="nav-item nav-link">Contact / Order</a>
-            </div>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto p-4 nav-mobile">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="menu.html" class="nav-item nav-link">Products</a>
+            <a href="testimonial.html" class="nav-item nav-link active"
+              >Impact</a
+            >
+            <a href="service.html" class="nav-item nav-link">Where to Buy</a>
+            <a href="contact.html" class="nav-item nav-link">Contact / Order</a>
+          </div>
         </div>
+      </nav>
+    </div>
 
-    </nav>
-</div>
+    <style>
+      /* Default (desktop stays same but cleaner control) */
+      .logo-img {
+        height: 90px;
+      }
 
-<style>
-/* Default (desktop stays same but cleaner control) */
-.logo-img {
-    height: 90px;
-}
+      /* MOBILE FIXES ONLY */
+      @media (max-width: 768px) {
+        /* Logo smaller */
+        .logo-img {
+          height: 60px;
+        }
 
-/* MOBILE FIXES ONLY */
-@media (max-width: 768px) {
+        /* Reduce padding inside menu */
+        .nav-mobile {
+          padding: 15px !important;
+          text-align: center;
+        }
 
-    /* Logo smaller */
-    .logo-img {
-        height: 60px;
-    }
+        /* Make links easier to tap */
+        .nav-mobile .nav-link {
+          padding: 10px 0;
+          font-size: 16px;
+        }
 
-    /* Reduce padding inside menu */
-    .nav-mobile {
-        padding: 15px !important;
-        text-align: center;
-    }
-
-    /* Make links easier to tap */
-    .nav-mobile .nav-link {
-        padding: 10px 0;
-        font-size: 16px;
-    }
-
-    /* Center menu items */
-    .navbar-nav {
-        align-items: center;
-    }
-}
-</style>
-<!-- Navbar End -->
-
+        /* Center menu items */
+        .navbar-nav {
+          align-items: center;
+        }
+      }
+    </style>
+    <!-- Navbar End -->
 
     <!-- Page Header Start -->
-<div class="container-fluid page-header mb-5 position-relative overlay-bottom">
-
-    <div class="d-flex flex-column align-items-center justify-content-center text-center px-3"
-         style="min-height: 300px">
-
-        <h3 class="display-4 text-white text-uppercase">
-            Impact
-        </h3>
+    <div
+      class="container-fluid page-header mb-5 position-relative overlay-bottom"
+    >
+      <div
+        class="d-flex flex-column align-items-center justify-content-center text-center px-3"
+        style="min-height: 300px"
+      >
+        <h3 class="display-4 text-white text-uppercase">Impact</h3>
 
         <div class="d-inline-flex mt-2">
-            <p class="m-0 text-white">
-                <a class="text-white" href="index.html">Home</a>
-            </p>
-            <p class="m-0 text-white px-2">/</p>
-            <p class="m-0 text-white">Impact</p>
+          <p class="m-0 text-white">
+            <a class="text-white" href="index.html">Home</a>
+          </p>
+          <p class="m-0 text-white px-2">/</p>
+          <p class="m-0 text-white">Impact</p>
         </div>
-
+      </div>
     </div>
-</div>
-<style>
-    @media (max-width: 768px) {
+    <style>
+      @media (max-width: 768px) {
+        .page-header {
+          margin-bottom: 30px !important;
+        }
 
-    .page-header {
-        margin-bottom: 30px !important;
-    }
+        .page-header h1 {
+          font-size: 26px !important;
+        }
 
-    .page-header h1 {
-        font-size: 26px !important;
-    }
+        .page-header div[style*="min-height"] {
+          min-height: 200px !important;
+        }
 
-    .page-header div[style*="min-height"] {
-        min-height: 200px !important;
-    }
+        .page-header .d-inline-flex {
+          font-size: 14px;
+        }
+      }
+    </style>
 
-    .page-header .d-inline-flex {
-        font-size: 14px;
-    }
-}
-</style>
-    
-<!-- Page Header End -->
+    <!-- Page Header End -->
 
-<!-- Testimonial Hero Start -->
-<div class="container-fluid py-5 text-center">
-    <div class="container">
-
-        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">
-            Voices Behind LekBesy
+    <!-- Testimonial Hero Start -->
+    <div class="container-fluid py-5 text-center">
+      <div class="container">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
+          Voices Behind LekBesy
         </h4>
 
-        <h1 class="display-4">
-            Stories, Trust & Impact
-        </h1>
+        <h1 class="display-4">Stories, Trust & Impact</h1>
 
         <p class="mt-3">
-            From community members to customers and leaders — here’s what people say about LekBesy.
+          From community members to customers and leaders — here’s what people
+          say about LekBesy.
         </p>
-
+      </div>
     </div>
-</div>
-<!-- Testimonial Hero End -->
- <!-- Industry Voices Start -->
-<div class="container-fluid pb-5">
-    <div class="container">
-
+    <!-- Testimonial Hero End -->
+    <!-- Industry Voices Start -->
+    <div class="container-fluid pb-5">
+      <div class="container">
         <h3 class="mb-5 text-center">Trusted by Leaders & Influencers</h3>
 
         <div class="row">
-
-            <!-- ITEM -->
-            <div class="col-md-6 mb-4">
-                <div class="testimonial-premium">
-                    <p>
-                        “LekBesy is transforming rural communities while building a strong Nepali brand.”
-                    </p>
-                    <div class="d-flex align-items-center mt-3">
-                        <img src="img/testimonial-1.jpg" class="t-img">
-                        <div class="ml-3">
-                            <h6>Anil Keshari Shah</h6>
-                            <small>Former CEO, Nabil Bank</small>
-                        </div>
-                    </div>
+          <!-- ITEM -->
+          <div class="col-md-6 mb-4">
+            <div class="testimonial-premium">
+              <p>
+                “LekBesy is transforming rural communities while building a
+                strong Nepali brand.”
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="img/testimonial-1.jpg" class="t-img" />
+                <div class="ml-3">
+                  <h6>Anil Keshari Shah</h6>
+                  <small>Former CEO, Nabil Bank</small>
                 </div>
+              </div>
             </div>
+          </div>
 
-            <!-- ITEM -->
-            <div class="col-md-6 mb-4">
-                <div class="testimonial-premium">
-                    <p>
-                        “Authentic taste with purpose. A brand that truly represents Nepal.”
-                    </p>
-                    <div class="d-flex align-items-center mt-3">
-                        <img src="img/testimonial-6.jpg" class="t-img">
-                        <div class="ml-3">
-                            <h6>Tikaram Yatri</h6>
-                            <small>Editor-in-Chief of Yatri Media</small>
-                        </div>
-                    </div>
+          <!-- ITEM -->
+          <div class="col-md-6 mb-4">
+            <div class="testimonial-premium">
+              <p>
+                “Authentic taste with purpose. A brand that truly represents
+                Nepal.”
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="img/testimonial-6.jpg" class="t-img" />
+                <div class="ml-3">
+                  <h6>Tikaram Yatri</h6>
+                  <small>Editor-in-Chief of Yatri Media</small>
                 </div>
+              </div>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-<style>
-    .testimonial-premium {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
+    <style>
+      .testimonial-premium {
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
 
-.testimonial-premium:hover {
-    transform: translateY(-5px);
-}
+      .testimonial-premium:hover {
+        transform: translateY(-5px);
+      }
 
-.t-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+      .t-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
     </style>
-<!-- Industry Voices End -->
+    <!-- Industry Voices End -->
 
-
-<!-- Community Voices Start -->
-<div class="container-fluid py-5 community-section">
-    <div class="container">
-
+    <!-- Community Voices Start -->
+    <div class="container-fluid py-5 community-section">
+      <div class="container">
         <h3 class="text-center mb-5 text-white">Voices from Our Community</h3>
 
         <div class="row">
-
-            <div class="col-md-6 mb-4">
-                <div class="community-card">
-                    <i class="fa fa-heart"></i>
-                    <p>
-                        “LekBesy has given us the opportunity to earn and support our families.”
-                    </p>
-                    <h6>Local Women Producer</h6>
-                </div>
+          <div class="col-md-6 mb-4">
+            <div class="community-card">
+              <i class="fa fa-heart"></i>
+              <p>
+                “LekBesy has given us the opportunity to earn and support our
+                families.”
+              </p>
+              <h6>Local Women Producer</h6>
             </div>
+          </div>
 
-            <div class="col-md-6 mb-4">
-                <div class="community-card">
-                    <i class="fa fa-seedling"></i>
-                    <p>
-                        “We feel proud seeing our local product reach global markets.”
-                    </p>
-                    <h6>Community Member</h6>
-                </div>
+          <div class="col-md-6 mb-4">
+            <div class="community-card">
+              <i class="fa fa-seedling"></i>
+              <p>
+                “We feel proud seeing our local product reach global markets.”
+              </p>
+              <h6>Community Member</h6>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-<style>
-       .community-section {
-    background: linear-gradient(135deg, #2c1e1e, #4a2e2e);
-}
+    <style>
+      .community-section {
+        background: linear-gradient(135deg, #2c1e1e, #4a2e2e);
+      }
 
-.community-card {
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 15px;
-    color: #fff;
-    text-align: center;
-    transition: 0.3s;
-}
+      .community-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        border-radius: 15px;
+        color: #fff;
+        text-align: center;
+        transition: 0.3s;
+      }
 
-.community-card i {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #d4a762;
-}
+      .community-card i {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #d4a762;
+      }
 
-.community-card:hover {
-    transform: translateY(-8px);
-}
-       </style> 
-<!-- Community Voices End -->
+      .community-card:hover {
+        transform: translateY(-8px);
+      }
+    </style>
+    <!-- Community Voices End -->
 
- <!-- Customer Voices Start -->
-<div class="container-fluid py-5">
-    <div class="container">
-
+    <!-- Customer Voices Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
         <h3 class="text-center mb-5">What Our Customers Say</h3>
 
         <div class="row">
-
-            <div class="col-md-4 mb-4">
-                <div class="customer-card">
-                    <p>“The taste is unique and unforgettable.”</p>
-                </div>
+          <div class="col-md-4 mb-4">
+            <div class="customer-card">
+              <p>“The taste is unique and unforgettable.”</p>
             </div>
+          </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="customer-card">
-                    <p>“I always order again—quality is amazing.”</p>
-                </div>
+          <div class="col-md-4 mb-4">
+            <div class="customer-card">
+              <p>“I always order again—quality is amazing.”</p>
             </div>
+          </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="customer-card">
-                    <p>“Perfect blend of tradition and modern taste.”</p>
-                </div>
+          <div class="col-md-4 mb-4">
+            <div class="customer-card">
+              <p>“Perfect blend of tradition and modern taste.”</p>
             </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-<style>
-    .customer-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: 0.3s;
-}
+    <style>
+      .customer-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: 0.3s;
+      }
 
-.customer-card:hover {
-    transform: translateY(-10px);
-}
-</style>
-<!-- Customer Voices End -->
+      .customer-card:hover {
+        transform: translateY(-10px);
+      }
+    </style>
+    <!-- Customer Voices End -->
 
-
-<!-- Impact Numbers Start -->
-<div class="container-fluid impact-section py-5">
-    <div class="container text-center text-white">
-
+    <!-- Impact Numbers Start -->
+    <div class="container-fluid impact-section py-5">
+      <div class="container text-center text-white">
         <h3 class="mb-5">Our Growing Impact</h3>
 
         <div class="row">
+          <div class="col-md-4 mb-4">
+            <h1 class="counter">50+</h1>
+            <p>Women Empowered</p>
+          </div>
 
-            <div class="col-md-4 mb-4">
-                <h1 class="counter">50+</h1>
-                <p>Women Empowered</p>
-            </div>
+          <div class="col-md-4 mb-4">
+            <h1 class="counter">3+</h1>
+            <p>Countries Reached</p>
+          </div>
 
-            <div class="col-md-4 mb-4">
-                <h1 class="counter">3+</h1>
-                <p>Countries Reached</p>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <h1 class="counter">1000+</h1>
-                <p>Happy Customers</p>
-            </div>
-
+          <div class="col-md-4 mb-4">
+            <h1 class="counter">1000+</h1>
+            <p>Happy Customers</p>
+          </div>
         </div>
-
+      </div>
     </div>
-</div>
-<style>
- .impact-section {
-    background: linear-gradient(135deg, #d4a762, #b88b4a);
-}
+    <style>
+      .impact-section {
+        background: linear-gradient(135deg, #d4a762, #b88b4a);
+      }
 
-.counter {
-    font-size: 48px;
-    font-weight: bold;
-}
-</style>
-<script>
-document.querySelectorAll('.counter').forEach(counter => {
-    let target = parseInt(counter.innerText);
-    let count = 0;
+      .counter {
+        font-size: 48px;
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      document.querySelectorAll(".counter").forEach((counter) => {
+        let target = parseInt(counter.innerText);
+        let count = 0;
 
-    let update = () => {
-        count += Math.ceil(target / 50);
-        if (count < target) {
+        let update = () => {
+          count += Math.ceil(target / 50);
+          if (count < target) {
             counter.innerText = count + "+";
             requestAnimationFrame(update);
-        } else {
+          } else {
             counter.innerText = target + "+";
-        }
-    };
+          }
+        };
 
-    update();
-});
-</script>
+        update();
+      });
+    </script>
 
-<!-- Impact Numbers End -->
+    <!-- Impact Numbers End -->
 
-
-<!-- Footer Start -->
-<div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
-    
-    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4 text-center text-md-left">
-
+    <!-- Footer Start -->
+    <div
+      class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top"
+    >
+      <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4 text-center text-md-left">
         <!-- Contact -->
         <div class="col-12 col-md-6 col-lg-3 mb-5">
-            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contact Info</h4>
-            <p><i class="fa fa-phone-alt mr-2"></i>+977 9863194345</p>
-            <p><i class="fab fa-instagram mr-2"></i>@LekBesy</p>
-            <p class="m-0"><i class="fa fa-map-marker-alt mr-2"></i>Bharatpur, Nepal</p>
+          <h4
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 3px"
+          >
+            Contact Info
+          </h4>
+          <p><i class="fa fa-phone-alt mr-2"></i>+977 9863194345</p>
+          <p><i class="fab fa-instagram mr-2"></i>@LekBesy</p>
+          <p class="m-0">
+            <i class="fa fa-map-marker-alt mr-2"></i>Banepa, Kavrepalanchok
+          </p>
         </div>
 
         <!-- Social -->
         <div class="col-12 col-md-6 col-lg-3 mb-5">
-            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
-            <p>Support local • support women • support Nepali heritage</p>
+          <h4
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 3px"
+          >
+            Follow Us
+          </h4>
+          <p>Support local • support women • support Nepali heritage</p>
 
-            <div class="d-flex justify-content-center justify-content-md-start">
-                <a class="btn btn-outline-light btn-square mr-2" href="https://www.instagram.com/lekbesy/"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-square mr-2" href="https://www.facebook.com/profile.php?id=61558491642049"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-square" href="https://www.youtube.com/@LekBesy"><i class="fab fa-youtube"></i></a>
-            </div>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <a
+              class="btn btn-outline-light btn-square mr-2"
+              href="https://www.instagram.com/lekbesy/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-square mr-2"
+              href="https://www.facebook.com/profile.php?id=61558491642049"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-square"
+              href="https://www.youtube.com/@LekBesy"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
         </div>
 
         <!-- Markets -->
         <div class="col-12 col-md-6 col-lg-3 mb-5">
-            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Our Markets</h4>
-            <h6 class="text-white text-uppercase">Nepal</h6>
-            <p>Bharatpur, Chitwan</p>
+          <h4
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 3px"
+          >
+            Our Markets
+          </h4>
+          <h6 class="text-white text-uppercase">Nepal</h6>
+          <p>Bharatpur, Chitwan</p>
 
-            <h6 class="text-white text-uppercase">International</h6>
-            <p>Australia • UAE • Canada</p>
+          <h6 class="text-white text-uppercase">International</h6>
+          <p>Australia • UAE • Canada</p>
         </div>
 
         <!-- About -->
         <div class="col-12 col-md-6 col-lg-3 mb-5">
-            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">About LekBesy</h4>
+          <h4
+            class="text-white text-uppercase mb-4"
+            style="letter-spacing: 3px"
+          >
+            About LekBesy
+          </h4>
 
-            <p>
-                Premium Lapsi products made with quality, care, and purpose.
-                Supporting women and communities. DFTQC Certified.
-            </p>
+          <p>
+            Premium Lapsi products made with quality, care, and purpose.
+            Supporting women and communities. DFTQC Certified.
+          </p>
 
-            <div class="w-100">
-                <a href="https://wa.me/9779863194345" class="btn btn-primary mt-2">
-    Chat on WhatsApp
-</a>
-            </div>
+          <div class="w-100">
+            <a href="https://wa.me/9779863194345" class="btn btn-primary mt-2">
+              Chat on WhatsApp
+            </a>
+          </div>
         </div>
+      </div>
+      <!-- Bottom -->
+      <div
+        class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5 footer-bottom"
+      >
+        <p class="mb-2 text-white footer-copy">
+          &copy; 2026
+          <a class="font-weight-bold text-white" href="#">LekBesy</a>. All
+          Rights Reserved.
+        </p>
 
+        <p class="m-0 text-white footer-tagline">
+          A Social-Impact Enterprise • Supporting Women • Preserving Nepali
+          Heritage
+        </p>
+      </div>
+      <style>
+        /* ================= MOBILE FIX ================= */
+        @media (max-width: 768px) {
+          .footer-bottom {
+            padding: 20px 10px !important;
+          }
+
+          .footer-copy {
+            font-size: 13px;
+            margin-bottom: 8px;
+          }
+
+          .footer-tagline {
+            font-size: 12px;
+            line-height: 1.4;
+          }
+        }
+      </style>
     </div>
-     <!-- Bottom -->
-<div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5 footer-bottom">
-
-    <p class="mb-2 text-white footer-copy">
-        &copy; 2026 <a class="font-weight-bold text-white" href="#">LekBesy</a>. All Rights Reserved.
-    </p>
-
-    <p class="m-0 text-white footer-tagline">
-        A Social-Impact Enterprise • Supporting Women • Preserving Nepali Heritage
-    </p>
-
-</div>
-<style>
-/* ================= MOBILE FIX ================= */
-@media (max-width: 768px) {
-
-    .footer-bottom {
-        padding: 20px 10px !important;
-    }
-
-    .footer-copy {
-        font-size: 13px;
-        margin-bottom: 8px;
-    }
-
-    .footer-tagline {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-}
-</style>
-</div>
-
 
     <style>
+      /* Default (desktop stays same) */
+      .btn-square {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-/* Default (desktop stays same) */
-.btn-square {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+      /* Mobile improvement */
+      @media (max-width: 768px) {
+        .btn-square {
+          width: 45px;
+          height: 45px;
+        }
+      }
 
-/* Mobile improvement */
-@media (max-width: 768px) {
-    .btn-square {
-        width: 45px;
-        height: 45px;
-    }
-}
+      /* ================= MOBILE FIX ================= */
+      @media (max-width: 768px) {
+        /* Center all footer text only */
+        .footer {
+          text-align: center;
+        }
 
-/* ================= MOBILE FIX ================= */
-@media (max-width: 768px) {
+        /* Better spacing between footer sections */
+        .footer .mb-5 {
+          margin-bottom: 30px !important;
+        }
 
-    /* Center all footer text only */
-    .footer {
-        text-align: center;
-    }
+        /* Center social icons properly */
+        .footer .d-flex {
+          justify-content: center !important;
+        }
 
-    /* Better spacing between footer sections */
-    .footer .mb-5 {
-        margin-bottom: 30px !important;
-    }
+        /* Input field improvements */
+        .footer-input input {
+          padding: 10px !important;
+          font-size: 14px;
+        }
 
-    /* Center social icons properly */
-    .footer .d-flex {
-        justify-content: center !important;
-    }
+        .footer-input button {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
 
-    /* Input field improvements */
-    .footer-input input {
-        padding: 10px !important;
-        font-size: 14px;
-    }
+        /* Improve heading readability */
+        .footer h4 {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
 
-    .footer-input button {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
+        /* Improve paragraph readability */
+        .footer p {
+          font-size: 14px;
+          line-height: 1.5;
+        }
 
-    /* Improve heading readability */
-    .footer h4 {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
+        /* Typography */
+        .footer h4 {
+          font-size: 18px;
+          margin-bottom: 12px;
+        }
 
-    /* Improve paragraph readability */
-    .footer p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
+        .footer p {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+    </style>
+    <!-- Footer End -->
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+      <i class="fa fa-angle-double-up"></i>
+    </a>
+    <style>
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 999;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+      }
 
-/* Typography */
-     .footer h4 {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
+      /* Hover effect (desktop) */
+      .back-to-top:hover {
+        transform: translateY(-3px);
+      }
 
-    .footer p {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
-</style>
-<!-- Footer End -->
-
-
-
-
-   <!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
-    <i class="fa fa-angle-double-up"></i>
-</a>
-<style>
-    .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    z-index: 999;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-/* Hover effect (desktop) */
-.back-to-top:hover {
-    transform: translateY(-3px);
-}
-
-/* ================= MOBILE FIX ================= */
-@media (max-width: 768px) {
-
-    .back-to-top {
-        width: 45px;
-        height: 45px;
-        bottom: 15px;
-        right: 15px;
-        font-size: 14px;
-    }
-}
-
-</style>
-
+      /* ================= MOBILE FIX ================= */
+      @media (max-width: 768px) {
+        .back-to-top {
+          width: 45px;
+          height: 45px;
+          bottom: 15px;
+          right: 15px;
+          font-size: 14px;
+        }
+      }
+    </style>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -601,6 +625,5 @@ document.querySelectorAll('.counter').forEach(counter => {
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
